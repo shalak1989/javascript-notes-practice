@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="static/css/challenge.css">
+</head>
+
+<body>
+    <!--Challenge 1-->
+    <div class="outerChallengeBox">
+        <h2>Challenge 1: Your Age In Days</h2>
+
+        <div class=innerBox>
+            <div>
+                <button id="challengeOneStart" class="btn btn-primary">Click me</button>
+            </div>
+
+            <div>
+                <button id="challengeOneReset" class="btn btn-danger">reset</button>
+            </div>
+        </div>
+
+        <div class="innerBox">
+            <div id="challengeOneResult" class="innerBox"></div>
+        </div>
+    </div>
+
+    <div class="outerChallengeBox">
+
+        <!--Challenge 2-->
+        <h2>Challenge 2: Cat Generator</h2>
+
+        <div class=innerBox>
+            <div>
+                <button id="generateCats" class="btn btn-success">Generate Cat</button>
+            </div>
+        </div>
+
+        <div id="challengeTwoResult" class="innerBox">
+
+        </div>
+    </div>
+
+    <!--Challenge 3-->
+
+    <div class="outerChallengeBox">
+        <h2>Challenge 3: Rock, Paper, Scissors</h2>
+        <div id="rockPaperScissorsChoices" class=innerBox>
+            <img id="rock" onclick="rpsGame(this)" src="https://media.istockphoto.com/vectors/gray-stone-with-lights-and-shadows-massive-mountain-rock-cartoon-vector-id992798944?s=170x170"
+                class="rockPaperScissorsImg"></img>
+            <img id="paper" onclick="rpsGame(this)" src="https://vector.me/files/images/1/4/147852/notebook_paper_leaf_cartoon_loose_writing_piece_sheet_nexxuz_looseleaf_preview.jpg"
+                class="rockPaperScissorsImg"></img>
+            <img id="scissors" onclick="rpsGame(this)" src="https://illustimage.com/photo/3120.png" class="rockPaperScissorsImg"></img>
+        </div>
+    </div>
+
+    <!--Challenge 4-->
+    <div class="outerChallengeBox">
+        <h2>Challenge 4: Change the Colorof All Buttons!</h2>
+        <div class=innerBox>
+
+            <form action="">
+                <select onchange="buttonColorChange(this)">
+                    <option value="random">Random</option>
+                    <option value="red">&#10004;Red</option>
+                    <option value="green">Green</option>
+                    <option value="reset">Reset</option>
+                </select>
+            </form>
+
+            <button class="btn btn-primary">Wee!</button>
+            <button class="btn btn-danger">Yahoo!</button>
+            <button class="btn btn-warning">Google!</button>
+            <button class="btn btn-success">Facebook!</button>
+        </div>
+    </div>
+
+    <!--Challenge 5-->
+    <div class="outerChallengeBox">
+        <h2>Challenge 5: Blackjack</h2>
+        <h3><span id="blackjack-result">Let's Play</span></h3>
+
+        <div class="innerBox" id="blackjack-board" >
+
+            <div id="your-box"> 
+                <h2>You: <span id="your-blackjack-result">0</span></h2>
+            </div>
+
+            <div id="dealer-box">
+                <h2>Dealer: <span id="dealer-blackjack-result">0</span></h2>
+            </div>
+
+        </div>
+
+        <div class="innerBox" id="blackjack-board-choices">
+            <div>
+                <button id="blackjack-hit-button" class="btn-lg btn-primary mr-2">Hit</button>
+                <button id="blackjack-stand-button" class="btn-lg btn-warning mr-2">Stand</button>
+                <button id="blackjack-deal-button" class="btn-lg btn-danger">Deal</button>
+            </div>
+        </div>
+
+        <div class="innerBox">
+            <table>
+                <tr>
+                    <th>Wins</th>
+                    <th>Losses</th>
+                    <th>Draws</th>
+                </tr>
+
+                <tr>
+                    <td><span id="wins">0</span></td>
+                    <td><span id="losses">0</span></td>
+                    <td><span id="draws">0</span></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="static/js/script.js"></script>
+
+</body>
+
+</html>
